@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>untitled</title>
+	
+</head>
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../mTabs.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		$('#one').mTabs();
+		
+		$('#two').mTabs({
+			nav : "#theNav"
+		});		
+		
+		$('#three').mTabs({
+		});		
+		
+	})
+</script>
+<body>
+<h1>mTabs Demo</h1>
+<div style="float:left; width:200px">
+	<h2>Without a Nav</h2>
+	<div id="one">
+		<div id="div1">Example content 1</div>
+		<div id="div2">Some other content</div>	
+		<div id="div3">Still more content.</div>
+		<div id="div4">This is turning into a portal now</div>
+	</div>
+</div>
+
+
+<div style="float:left; width:200px">
+	<h2>Auto-Generated Nav</h2>
+	<div id="two">
+		<div id="div1">blahhhhhhhh</div>
+		<div id = "div2">blooooooo</div>
+		<div id= "div43">bleeeeeee</div>
+	</div>
+	<div id="theNav">
+		<a href="#div1">1</a>
+		<a href="#div2">2</a>
+		<a href = "#div43">Hullbalo</a>	
+	</div>
+</div>
+
+<div style="float:left; width:200px">
+	<h2>Multiple Tab Sets on a Page</h2>
+	<ul id="three">
+		<li id="div1">here</li>
+		<li id = "div2">comes</li>
+		<li id= "div43">the</li>
+		<li id= "div33343">pain</li>
+	</ul>
+</div>
+
+</body>
+</html>
